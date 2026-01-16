@@ -1,0 +1,46 @@
+.bg {
+    background-image: url('/assets/services/services-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.item, .serviceItem {
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.serviceItem_wrapper {
+    padding: 10px 16px;
+    border-radius: 6px;
+    transform: translateY(-10px);
+    line-height: 1;
+    background: #0f172a;
+}
+
+.item::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -4px;
+  right: -5px;
+  width: 2px;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.85) 0%,
+    rgba(255, 255, 255, 0.6) 40%,
+    transparent 70%
+  );
+}
+
+.item:last-child {
+    flex-direction: row;
+    margin-top: -8px;
+}
+
+.item:last-child::after {
+    display: none;
+}

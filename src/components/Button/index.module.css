@@ -1,0 +1,23 @@
+.button {
+    padding: 14px 24px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: clamp(10px, 3vw, 18px);
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: linear-gradient(180deg, #38bdf8, #0284c7);
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+  filter: brightness(1.1) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+  transform: translateY(-1px);
+}
+
+.secondaryBtn {
+    display: flex;
+    gap: 12px;
+    line-height: 1;
+    background: #0f172a;
+}
