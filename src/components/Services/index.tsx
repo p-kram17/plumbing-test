@@ -110,7 +110,7 @@ export function Services({ className = '' }: TServicesProps) {
             sm:overflow-visible
             snap-x snap-mandatory
             scrollbar-hide
-            lg:justify-start sm:justify-center
+            lg:justify-center sm:justify-center
           "
         >
           {SERVICE_ITEMS.map((item, idx) => (
